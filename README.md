@@ -32,9 +32,12 @@ Split into 90% training and 10% test data.
 
 Update model parameters iteratively with each new chunk.
 
-5. Experimental ResultsPerformance was evaluated on an aggregated test set using Accuracy and ROC-AUC scores.ModelAccuracyROC-AUC ScoreTotal Rows ProcessedXGBoost Classifier0.73810.7089~396,355,554 (~100GB)TensorFlow Model0.65710.6445~100,000,000 (~25GB)
+5. Experimental ResultsPerformance was evaluated on an aggregated test set using Accuracy and ROC-AUC scores.
+6. Model	           Accuracy	   ROC-AUC Score	  Total Rows Processed
+XGBoost Classifier	 0.7381	     0.7089	          ~396,355,554 (~100GB)
+TensorFlow Model	   0.6571	     0.6445	          ~100,000,000 (~25GB)
 
-6. Conclusion & Future Directions
+7. Conclusion & Future Directions
 This study demonstrates that incremental learning allows for training on massive datasets without exceeding memory limits.
 
 Key Takeaway: Both models efficiently handle large-scale tabular data, but XGBoost provided higher accuracy and ROC-AUC scores in this environment.
